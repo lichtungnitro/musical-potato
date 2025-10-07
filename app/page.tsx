@@ -1,15 +1,16 @@
-import { BlogPosts } from "app/components/posts";
+import { BlogPosts } from 'app/components/posts'
+import { siteConfig } from 'app/config/site'
 
-export default function Page() {
+export default function Page(): JSX.Element {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        {siteConfig.pages.home.title}
       </h1>
       <p className="mb-4">
         {`Anyone who cares about the fruits must first look to, and reform, the root.
         Once you realize that the distant starry sky is nothing other than the moral law
-        within, you see that there is truly nothing “outside” the mind. When the thief
+        within, you see that there is truly nothing "outside" the mind. When the thief
         in the mind is removed, no thief remains outside.`}
       </p>
       <p className="mb-4">
@@ -21,5 +22,5 @@ export default function Page() {
         <BlogPosts />
       </div>
     </section>
-  );
+  )
 }

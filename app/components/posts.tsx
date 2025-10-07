@@ -1,16 +1,15 @@
-import Link from 'next/link'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
+import type { ContentItem } from 'app/lib/types'
+import Link from 'next/link'
 
-export function BlogPosts() {
-  let allBlogs = getBlogPosts()
+export function BlogPosts(): JSX.Element {
+  const allBlogs: ContentItem[] = getBlogPosts()
 
   return (
     <div>
       {allBlogs
         .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-          ) {
+          if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
             return -1
           }
           return 1
@@ -18,7 +17,7 @@ export function BlogPosts() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
+            className="flex flex-col space-y-1 mb-1"
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
