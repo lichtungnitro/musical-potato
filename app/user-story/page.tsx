@@ -1,7 +1,7 @@
 import path from 'node:path'
-import { CustomMDX } from 'app/components/mdx'
-import { siteConfig } from 'app/config/site'
-import { getSingleMDX } from 'app/lib/mdx'
+import { CustomMDX } from '@/components/mdx'
+import { siteConfig } from '@/config/site'
+import { getSingleMDX } from '@/lib/mdx'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
-import { getBlogPosts } from 'app/blog/utils'
-import { siteConfig } from 'app/config/site'
+import { getBlogPosts } from '@/blog/utils'
+import { siteConfig } from '@/config/site'
 import type { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

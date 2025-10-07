@@ -1,6 +1,6 @@
 import path from 'node:path'
-import { getMDXData } from 'app/lib/mdx'
-import type { ContentItem } from 'app/lib/types'
+import { getMDXData } from '@/lib/mdx'
+import type { ContentItem } from '@/lib/types'
 
 export function getBlogPosts(): ContentItem[] {
   return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))

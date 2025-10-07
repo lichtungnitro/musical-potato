@@ -1,5 +1,5 @@
-import { formatDate, getBlogPosts } from 'app/blog/utils'
-import type { ContentItem } from 'app/lib/types'
+import { formatDate, getBlogPosts } from '@/blog/utils'
+import type { ContentItem } from '@/lib/types'
 import Link from 'next/link'
 
 export function BlogPosts(): JSX.Element {

@@ -1,5 +1,5 @@
-import { BlogPosts } from 'app/components/posts'
-import { siteConfig } from 'app/config/site'
+import { BlogPosts } from '@/components/posts'
+import { siteConfig } from '@/config/site'
 
 export default function Page(): JSX.Element {
   return (

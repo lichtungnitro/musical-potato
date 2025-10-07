@@ -1,5 +1,5 @@
-import { getBlogPosts } from 'app/blog/utils'
-import { siteConfig } from 'app/config/site'
+import { getBlogPosts } from '@/blog/utils'
+import { siteConfig } from '@/config/site'
 
 export async function GET(): Promise<Response> {
   const allBlogs = getBlogPosts()

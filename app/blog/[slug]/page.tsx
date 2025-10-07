@@ -1,6 +1,6 @@
-import { formatDate, getBlogPosts } from 'app/blog/utils'
-import { CustomMDX } from 'app/components/mdx'
-import { siteConfig } from 'app/config/site'
+import { formatDate, getBlogPosts } from '@/blog/utils'
+import { CustomMDX } from '@/components/mdx'
+import { siteConfig } from '@/config/site'
 import { notFound } from 'next/navigation'
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
