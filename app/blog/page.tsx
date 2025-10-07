@@ -1,6 +1,6 @@
-import { BlogPosts } from '@/components/posts'
-import { siteConfig } from '@/config/site'
 import type { Metadata } from 'next'
+import { BlogPosts } from '../components/posts'
+import { siteConfig } from '../config/site'
 
 export const metadata: Metadata = {
   title: siteConfig.pages.blog.title,

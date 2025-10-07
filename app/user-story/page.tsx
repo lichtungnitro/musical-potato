@@ -1,8 +1,8 @@
 import path from 'node:path'
-import { CustomMDX } from '@/components/mdx'
-import { siteConfig } from '@/config/site'
-import { getSingleMDX } from '@/lib/mdx'
 import type { Metadata } from 'next'
+import { CustomMDX } from '../components/mdx'
+import { siteConfig } from '../config/site'
+import { getSingleMDX } from '../lib/mdx'
 
 export const metadata: Metadata = {
   title: siteConfig.pages.userStory.title,
